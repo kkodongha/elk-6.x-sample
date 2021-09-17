@@ -1,7 +1,6 @@
-version: '3.3'
+version: "3.3"
 
 services:
-
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.13.2
     ports:
@@ -12,7 +11,7 @@ services:
         target: /usr/share/elasticsearch/config/elasticsearch.yml
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
-      ELASTIC_PASSWORD: changeme
+      ELASTIC_PASSWORD: elastic
       # Use single node discovery in order to disable production mode and avoid bootstrap checks.
       # see: https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
       discovery.type: single-node
@@ -57,7 +56,6 @@ services:
       replicas: 1
 
 configs:
-
   elastic_config:
     file: ./elasticsearch/config/elasticsearch.yml
   logstash_config:

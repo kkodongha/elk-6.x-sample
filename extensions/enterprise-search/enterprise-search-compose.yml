@@ -1,4 +1,4 @@
-version: '3.2'
+version: "3.2"
 
 services:
   enterprise-search:
@@ -13,9 +13,9 @@ services:
         read_only: true
     environment:
       JAVA_OPTS: -Xmx2g -Xms2g
-      ENT_SEARCH_DEFAULT_PASSWORD: changeme
+      ENT_SEARCH_DEFAULT_PASSWORD: elastic
     ports:
-      - '3002:3002'
+      - "3002:3002"
     networks:
       - elk
     depends_on:

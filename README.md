@@ -1,3 +1,4 @@
+```
 PUT /news
 {
   "settings" : {
@@ -77,3 +78,4 @@ PUT /news
     }
   }
 }
+```

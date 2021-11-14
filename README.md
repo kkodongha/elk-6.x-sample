@@ -6,9 +6,9 @@
 
 ### **Version**
 
-Elasticsearch : 7.13.2  
-Logstash : 7.13.2  
-Kibana : 7.13.2
+Elasticsearch : 7.15.2  
+Logstash : 7.15.2  
+Kibana : 7.15.2
 
 ### 프로젝트 단계
 

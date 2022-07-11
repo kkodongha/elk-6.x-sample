@@ -54,7 +54,17 @@ PUT /news
         "type": "keyword"
       },
       "category": {
-        "type": "keyword"
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "nori_analyzer": {
+            "type": "text",
+            "analyzer": "nori_analyzer"
+          }
+        }
       },
       "copyright": {
         "type": "text",
@@ -88,6 +98,19 @@ PUT /news
         }
       },
       "description_summary": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "nori_analyzer": {
+            "type": "text",
+            "analyzer": "nori_analyzer"
+          }
+        }
+      },
+      "description": {
         "type": "text",
         "fields": {
           "keyword": {

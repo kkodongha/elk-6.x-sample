@@ -50,7 +50,7 @@ PUT /news
   },
   "mappings": {
     "properties": {
-			"language": {
+      "language": {
         "type": "keyword"
       },
       "category": {
@@ -75,7 +75,7 @@ PUT /news
           }
         }
       },
-			"title": {
+      "title": {
         "type": "text",
         "fields": {
           "keyword": {

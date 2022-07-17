@@ -43,7 +43,7 @@ if [[ $count -ne 1 ]]; then
 fi
 
 log 'Sending message to Logstash TCP input'
-echo 'dockerelk' | nc -q0 "$ip_ls" 5000
+echo 'dockerelk' | nc -q0 "$ip_ls" 5001
 
 sleep 1
 curl -X POST "http://${ip_es}:9200/_refresh" -u elastic:testpasswd \

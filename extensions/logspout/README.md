@@ -17,7 +17,7 @@ In your Logstash pipeline configuration, enable the `udp` input and set the inpu
 ```logstash
 input {
   udp {
-    port  => 5000
+    port  => 5001
     codec => json
   }
 }
